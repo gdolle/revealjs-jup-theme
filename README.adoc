@@ -18,8 +18,11 @@ Rename the css file with your notebook name
 
 === Revealjs
 
-For revealjs users, you should download revealjs source code and copy
-the files into revealjs source according to the following table
+The simplest method is to copy a `<theme>.css` aside to the html file
+with the name `custom.css`
+
+To install a theme in revealjs directly, fist download revealjs source code and
+copy the following files into revealjs source
 
 |===
 | **this repo** | **revealjs**
