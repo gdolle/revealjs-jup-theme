@@ -1,0 +1,55 @@
+= RISE/REVEALJS JUP THEME 
+
+A theme for jupyter notebook with
+link:https://github.com/damianavila/RISE[RISE] extension.  All CSS files are
+generated from sass, similiar to revealjs original themes.
+
+NOTE: Do not edit css files, but process with *.scss instead, `./src/`
+directory !
+
+== Usage
+
+=== RISE
+
+If you are using jupyter RISE extension, then
+just copy a `css/<theme.css>` aside to your notebook.
+Rename the css file with your notebook name 
+`<notebook_filename>.css`
+
+=== Revealjs
+
+For revealjs users, you should download revealjs source code and copy
+the files into revealjs source according to the following table
+
+| **this repo** | **revealjs** |
+| --- | --- | 
+| `src/theme/<theme>.scss` | `css/theme/source` |
+| `src/template/jupyter.scss` | `css/theme/template` |
+
+Then compile revealjs as usual. The theme will be available directly via
+revealjs options.  For more details, See the official
+link:https://github.com/hakimel/reveal.js/tree/master/css/theme[revealjs theme
+documentation]
+
+== Customize
+
+== Compile SASS to CSS
+
+To generate a css, use sass tool.
+
+.Example
+```
+scss file.scss > file.css
+```
+
+NOTE: You can just type `make` to process all scss.
+```
+
+== Update
+
+Merge the original css theme from the folder
+https://github.com/hakimel/reveal.js/tree/master/css
+into this repository.
+
+NOTE: It might be difficult to maintain compatibility between Jupyter/RISE/revealjs,
+thus, just create an issue if you encounter compatibility problems with your version.
