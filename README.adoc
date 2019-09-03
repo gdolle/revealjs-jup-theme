@@ -21,19 +21,20 @@ Rename the css file with your notebook name
 For revealjs users, you should download revealjs source code and copy
 the files into revealjs source according to the following table
 
-| **this repo** | **revealjs** |
-| --- | --- | 
-| `src/theme/<theme>.scss` | `css/theme/source` |
-| `src/template/jupyter.scss` | `css/theme/template` |
+|===
+| **this repo** | **revealjs**
+
+| `src/theme/<theme>.scss` | `css/theme/source`
+| `src/template/jupyter.scss` | `css/theme/template`
+|===
 
 Then compile revealjs as usual. The theme will be available directly via
 revealjs options.  For more details, See the official
-link:https://github.com/hakimel/reveal.js/tree/master/css/theme[revealjs theme
-documentation]
+link:https://github.com/hakimel/reveal.js/tree/master/css/theme[revealjs theme documentation]
 
 == Customize
 
-== Compile SASS to CSS
+=== Compile SASS to CSS
 
 To generate a css, use sass tool.
 
@@ -43,7 +44,6 @@ scss file.scss > file.css
 ```
 
 NOTE: You can just type `make` to process all scss.
-```
 
 == Update
 
